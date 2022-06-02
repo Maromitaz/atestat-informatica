@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Zilla Slab', serif;
+}
+body {
+    min-height: 100vh;
+    background: #b9b9b9;
+}
+.navigation{
+    position: fixed;
+    width: 60px;
+    height: 100%;
+    background: #2B2E32;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index:1;
+}
+.navigation:hover,
+.navigation.active{
+    width: 300px;
+}
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: -2rem;
+    width: 100%;
+}
+.navigation ul li{
+    position: relative;
+    width: 125%;
+    list-style: none;
+}
+.navigation ul li:hover{
+    background: #e25454;
+}
+.navigation ul li a{
+    position: relative;
+    display: none;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.navigation ul li a .icon .fa{
+    font-size: 24px;
+}
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+.toggle{
+    display:none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: #3b3b3b;
+    cursor: pointer;
+    z-index:1;
+}
+.toggle:hover{
+    background: #e25454;
+}
+.toggle:before{
+    font-family: 'Font Awesome';
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+}
+.toggle i{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    color: #fff;
+}
+.toggle:hover i{
+    color: #fff;
+}
+.checkout{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+}
+
+@media (max-width: 925px){
+    .toggle{display:block;}
+    .navigation{left: -60px;}
+    .navigation.active{left:0; width:100%}
+}

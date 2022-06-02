@@ -1,0 +1,32 @@
+{% extends 'template.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'style/contact.css' %}" type="text/css"/>
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="contact-title">
+        <h1 class="contact-title-text">Contactează-ne</h1>
+    </div>
+    <div class="content">
+        <form class="contact-form" action="" method="POST">
+            {% csrf_token %}
+            <h1 class="contact-form-name-text">Numele</h1>
+            <input name="numele" type="text" class="contact-form-name-input"></input>
+            <h1 class="contact-form-surname-text">Prenumele</h1>
+            <input name="prenume" type="text" class="contact-form-surname-input"></input>
+            <h1 class="contact-form-email-text">Email</h1>
+            <input name="email" type="email" class="contact-form-email-input"></input>
+            <h1 class="contact-form-motiv-text">Mesajul</h1>
+            <textarea name="mesajul" type="text" class="contact-form-motiv-input"></textarea>
+            <input type="submit" class="submit" value="Trimite"></input>
+        </form>
+        <div class="alert alert-danger" style="display: {{display}}" role="alert">
+            {{alert}}
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block javascript %}
+<script src="{% static 'js/contact.js' %}"></script>
+{% endblock %}

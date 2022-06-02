@@ -1,0 +1,21 @@
+{% extends 'template.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'style/despre.css' %}" type="text/css" />
+{% endblock %}
+{% block content %}
+<div class="grid-container">
+    <div class="container-universal">
+        <ul>
+            <img class="css-img" src="{% static 'images/css.png'%}"> 
+            <br> <br>
+            <li>Cascading Style Sheets, sau CSS este un limbaj de tip Style sheet</li>
+            <li>Determină schița, sau design-ul unei pagini web</li>
+            <li>Dezvoltat de către Håkon Wium Lie, Bert Bos, World Wide Web Consortium</li>
+            <li>A aparut original pe data de 17 decemberie 1996</li>
+        </ul>
+    </div>
+</div>
+{% endblock %}
+{% block javascript %}
+{% endblock %}

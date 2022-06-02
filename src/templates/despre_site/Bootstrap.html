@@ -1,0 +1,32 @@
+{% extends 'template.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'style/despre.css' %}" type="text/css" />
+{% endblock %}
+{% block content %}
+<div class="grid-container">
+	<div class="container-universal">
+		<ul>
+			<img class="bootstrap-img" src="{% static 'images/bootstrap-5.0-illustration.png' %}" alt="Poza"><br><br>
+			<li>
+				Bootstrap este un framework cunoscut, gratuit și open-source (sursa deschisă, care îți permite
+				schimbarea codului sursă după voința utilizatorului);
+			</li>
+			<li>
+				Acest framework a fost creat pentru dezvoltarea designe-ului web asupra tuturor platformelor;
+			</li>
+			<li>
+				Codul sursă acestui framework a fost făcut prin:
+				<ul>
+					<li>CSS (Cascading Style Sheets, folosit pentru decorarea paginii web),<br>mai exact într-un
+						preprocesor (SASS-Syntactically awesome style sheets);</li>
+					<li>JavaScript (folosit pentru a importa fișierul CSS și realizarea unor sarcini).</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>
+{% endblock %}
+{% block javascript %}
+
+{% endblock %}

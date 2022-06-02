@@ -1,0 +1,166 @@
+html,
+body{
+	overflow:auto;
+}
+
+.grid-container{
+	margin-top: 6rem;
+	margin-left: 7rem;
+	margin-right: 7rem;
+}
+.btn-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding-left: 20%;
+}
+.btn-danger{
+	font-size: 3.5vh !important;
+	margin-left: 25px;
+	margin-top: 25px;
+	margin-right: 12%;
+	background-color: #2B2E32 !important;
+	border-color: #2B2E32 !important;
+	width: 20vw !important;
+	height: 6vh;
+}
+.btn-danger:first-child{
+	width: 50vw !important;
+}
+.btn-danger:focus, .btn-danger:hover{
+	background-color: #E25454 !important;
+	border-color: #E25454 !important;
+}
+.container-universal{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding-left: 25%;
+	padding-right: 25%;
+	font-size:24px;
+}
+.iframe{
+	width: 40vw;
+	height: 20vh;
+}
+.container-universal>h1, 
+.container-universal>h2, 
+.container-universal>h3, 
+.container-universal>h4, 
+.container-universal>h5, 
+.container-universal>h6{
+	text-align: center;
+	width:100vw;
+}
+.inapoi{
+	color: #414346 !important;
+	text-decoration: none !important;
+	transition: color 0.15s ease-in-out;
+}
+.inapoi:hover{
+	color: #E25454 !important;
+}
+.container-universal>h1:first-child{
+	margin-left: 4vw;
+	width:100vw;
+}
+.lista-neordonata>li>a{
+	color: #414346 !important;
+	text-decoration: none !important;
+	transition: color 0.15s ease-in-out;
+}
+.lista-neordonata>li>a:hover{
+	color: #E25454 !important;
+}
+.vite-img{
+	margin-left: 10vw;
+	width: 20vw;
+}
+.js-img{
+	margin-left: 15vw;
+	width: 10vw;
+}
+.hyperlink{
+    text-decoration: none;
+    color: #e25454;
+    transition: color 0.12s ease-in-out;
+}
+.hyperlink:hover{
+    color: #9e3e3e;
+}
+.html-img{
+	margin-left: 25vh;
+}
+.bootstrap-img{
+	margin-left: 0;
+}
+.css-img{
+	margin-left: 0;
+}
+.nginx-img{
+	margin-left: 0;
+	width: 40vw;
+}
+.docker-img{
+	margin-left: 10vw;
+	width: 20vw;
+}
+@media (max-width: 1000px){
+	.grid-container{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	ul{
+		width: 90vw;
+	}
+	ul > li{
+		width: 90vw;
+	}
+	.btn-container{
+		padding-left: 10vw;
+	}
+	.btn-danger:first-child, .btn-danger{
+		font-size: 16px;
+		margin-right: 0 !important;
+		width: 75% !important;
+		flex-direction: column;
+		height: auto;
+	}
+	.iframe{
+		width: 80vw;
+		height: 36vh;
+	}
+	.container-universal{
+		padding-left: 0;
+		padding-right: 0;
+		width: 90vw;
+		align-items: center;
+		justify-content: center;
+	}
+	.html-img{
+		margin-left: 0vh;
+	}
+	.vite-img{
+		width: 80vw;
+		margin-left: 4vw;
+	}
+	img{
+		margin-left: 0;
+		width: 60vw;
+		margin-left: -20vw;
+	}
+	.css-img{
+		margin-left: 0;
+	}
+	.js-img{
+		margin-left: 0vw;
+		width: 50vw;
+	}
+	.nginx-img{
+		width: 90vw;
+	}
+	.docker-img{
+		margin-left: 0;
+		width: 80vw;
+	}
+}

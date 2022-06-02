@@ -1,0 +1,15 @@
+html,body{
+	overflow: auto;
+}
+.container{
+	margin-top: 16vh;
+	margin-left: 7rem;
+	margin-right: 7rem;
+}
+.titlu{
+	text-align: center;
+	font-size: 2.4rem;
+}
+x{
+	font-size: 3rem;
+}

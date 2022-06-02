@@ -1,0 +1,21 @@
+{% extends 'template.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'style/despre.css' %}" type="text/css" />
+{% endblock %}
+{% block content %}
+<div class="grid-container">
+	<div class="container-universal">
+		<ul>
+			<img class="js-img" src="{% static 'images/JavaScript.png'%}" alt="">
+			<br> <br>
+			<li>Javascript este un limbaj de programare folosit pentru interactionarea cu pagina web;</li>
+			<li>A fost dezvoltat de către Brendan Eich și întreținut de către Netscape Communications Corporation,
+				Mozilla Foundation</li>
+			<li>A apărut în anul 1995</li>
+		</ul>
+	</div>
+</div>
+{% endblock %}
+{% block javascript %}
+{% endblock %}

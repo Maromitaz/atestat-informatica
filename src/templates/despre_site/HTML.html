@@ -1,0 +1,23 @@
+{% extends 'template.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'style/despre.css' %}" type="text/css" />
+{% endblock %}
+{% block content %}
+<div class="grid-container">
+	<div class="container-universal">
+		<ul class="lista-neordonata">
+			<img class="html-img" src="{% static 'images/HTML5.png' %}" width="35%"><br><br>
+			<li>HTML, sau Hypertext Markup Language, este un limbaj de marcare;</li>
+			<li>Este folosit pentru definirea structurii unei pagini web</li>
+			<li>Dezvoltarea a început în anul 1989 la <a href="https://ro.wikipedia.org/wiki/CERN">CERN</a> de către Tim
+				Berners-Lee, iar pe urmă a aparut in anul 1993 prima versiune pentru public;</li>
+			<li>Exemple de cod in HTML:
+				<br><iframe type="text/html" src="{% static 'embed.html' %}" class="iframe"></iframe>
+			</li>
+		</ul>
+	</div>
+</div>
+{% endblock %}
+{% block javascript %}
+{% endblock %}

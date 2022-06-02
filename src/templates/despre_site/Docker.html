@@ -1,0 +1,18 @@
+{% extends 'template.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'style/despre.css' %}" type="text/css" />
+{% endblock %}
+{% block content %}
+<div class="grid-container">
+	<div class="container-universal">
+        <ul>
+			<img class="docker-img" src="{% static 'images/Docker.png' %}">
+			<li>Docker este un program făcut pentru virtualizarea unui server și asamblarea unui „container”;</li>
+			<li>Programul mai poate fi folosit cu mai multe containere, fiecare având un scop al său (baza de date, webserver)</li>
+		</ul>
+	</div>
+</div>
+{% endblock %}
+{% block javascript %}
+{% endblock %}

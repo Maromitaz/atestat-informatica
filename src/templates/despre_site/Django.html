@@ -1,0 +1,27 @@
+{% extends 'template.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'style/despre.css' %}" type="text/css" />
+{% endblock %}
+{% block content %}
+<div class="grid-container">
+	<div class="container-universal">
+		<ul>
+			<img src="{% static 'images/Django.png' %}" style="margin-left: 6vw" width="60%" alt="">
+			<li>Acesta a fost conceput in 21 iulie 2015, și încă este dezvoltat de catre Django Software Foundation și
+				este scris in python, un limbaj foarte usor de înțeles și de folosit;</li>
+			<li>Django este un framework atât de bun încât multe servicii populare il folosesc, cum ar fi: Pinterest,
+				Instagram, Spotify, Dropbox</li>
+			<li>Am ales acest framework, pentru că este foarte ușor de folosit, are accentul pus pe reutilizarea
+				codului (modularizarea codului, utilizând principiul “DRY” – don't repeat yourself), dar și pentru
+				panoul administrativ inclus în acesta care poate permite scrierea și ștergerea datelor foarte ușor
+				dintr-o baza de date cu tot cu protectia lor pentru injectarea codului SQL. Deși cea mai noua versiune
+				este 4.0.3 care dispune de mai multe patch-uri de securitate, eu am ales să folosesc versiunea 3.2.4
+				deoarece sunt acomodat cu setările implicite din aceasta versiune, dar și cu API-ul furnizat.</li>
+		</ul>
+	</div>
+</div>
+{% endblock %}
+{% block javascript %}
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'template.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'style/despre.css' %}" type="text/css" />
+{% endblock %}
+{% block content %}
+<div class="grid-container">
+    <div class="container-universal">
+        <ul>
+            <img class="vite-img" src="{% static 'images/vite.svg' %}">
+            <li>Vite este un framework făcut în JavaScript menit pentru a face pagina unui site web cât mai usor și rapid;</li>
+            <li>Acest framwork a apărut în anul 2021 și este scris de Evan You, același creator al framwork-ului Vue.js;</li>
+            <li>Codul sursă este valabil în depozitul lui de <a class="hyperlink"
+                    href="https://github.com/vitejs/vite">GitHub</a>.</li>
+        </ul>
+    </div>
+</div>
+{% endblock %}
+{% block javascript %}
+
+{% endblock %}

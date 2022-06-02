@@ -1,0 +1,23 @@
+{% extends 'template.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static '/style/mesaje.css' %}" type="text/css" />
+{% endblock %}
+
+{% block content %}
+<div class="main">
+    <div class="content">
+        {% for mesaj in mesaje %}
+        <div class="container">
+            <p class="nume-prenume">Numele:<br> {{ mesaj.numele }} <br> {{ mesaj.prenumele }}</p>
+            <p class="email">Email-ul:<br> {{mesaj.email}}</p>
+            <p class="mesaj"> Mesajul:<br> {{mesaj.mesajul}}</p>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+
+{% block javascript %}
+{% endblock %}

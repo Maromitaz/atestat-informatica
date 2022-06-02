@@ -1,0 +1,25 @@
+{% extends 'template.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'style/despre.css' %}" type="text/css" />
+{% endblock %}
+{% block content %}
+<div class="grid-container">
+    <div class="btn-container">
+        <a class="btn btn-danger" href="{% url 'tema_aleasa' %}">Tema aleasă</a>
+        <a class="btn btn-danger" href="{% url 'Django' %}">Django</a>
+        <a class="btn btn-danger" href="{% url 'HTML' %}">HTML</a>
+        <a class="btn btn-danger" href="{% url 'CSS' %}">CSS</a>
+        <a class="btn btn-danger" href="{% url 'Javascript' %}">Javascript</a>
+        <a class="btn btn-danger" href="{% url 'bootstrap' %}">Bootstrap</a>
+        <a class="btn btn-danger" href="{% url 'FontAwesome' %}">Font Awesome</a>
+        <a class="btn btn-danger" href="{% url 'Vite' %}">Vite.js</a>
+        <a class="btn btn-danger" href="{% url 'ThreeJS' %}">Three.JS</a>
+        <a class="btn btn-danger" href="{% url 'Docker' %}">Docker</a>
+        <a class="btn btn-danger" href="{% url 'NGINX' %}">NGINX</a>
+    </div>
+</div>
+{% endblock %}
+{% block javascript %}
+
+{% endblock %}

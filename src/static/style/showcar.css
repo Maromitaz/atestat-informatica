@@ -1,0 +1,120 @@
+html,
+body {
+    overflow:auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.map-text{
+    text-align: center;
+}
+#map{
+    margin-top: 2rem;
+    margin-left: 18%;
+    margin-right: 12%;
+    border: 1px;
+    border-radius: 5px;
+    height: 25vw;
+    width: 89vh;
+    box-shadow: 0 0 15px 1px;
+}
+#hidden{
+    content: hidden;
+}
+
+.container-xxl{
+    position: absolute; 
+    left: 15%;
+    top: 10%; 
+    width: 50%; 
+    height: auto;
+    margin-bottom: 10px;
+}
+.content-felx{
+    display: flex; 
+    flex-direction: column; 
+    flex-wrap: wrap;
+}
+.contents{
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: auto auto auto .2fr;
+    grid-template-areas: 
+    "content-title content-title content-title content-title"
+    "content-description content-description content-description content-description"
+    "content-description content-description content-description content-description"
+    "canvas canvas canvas canvas";
+    margin-left: 10px;
+    border: 1px solid #2B2E32;
+    border-radius: 10px;
+    color: #3a3a3a;
+    margin-bottom: 10vh;
+}
+.content-title, .content-description{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.content-description{
+    grid-area: content-description;
+    list-style: none;
+    margin-top: 2vh;
+}
+.content-description > li{
+    width: 96%;
+    padding-left: 2vw;
+    border-bottom: 2px solid #2B2E32;
+}
+.content-title{
+    border-bottom: 1px solid #3a3a3a;
+    box-shadow: 0 10px 10px -10px;
+    grid-area: content-title;
+}
+.content-title > a{
+    text-decoration: none;
+    color: #3a3a3a;
+    transition: color 0.2s ease-in-out;
+}
+.content-title > a:hover{
+    text-decoration: none;
+    color: #1b1b1b;
+}
+
+.canvas{
+    width: auto;
+    height: 30rem;
+    margin: 0vw;
+    margin-bottom: .6rem;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    grid-area: canvas;
+    justify-self: center; 
+    align-self: center; 
+}
+@media (max-width: 925px){
+    
+    .canvas{
+        width: 88vw !important;
+        height: 35vh !important;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+    .container-xxl{
+        left:0;
+        width: 100%; 
+    }
+    .contents{
+        grid-template-rows: auto auto auto auto; 
+        grid-template-columns: auto auto auto auto;
+        grid-template-areas: 
+        "content-title content-title content-title content-title"
+        "content-description content-description content-description content-description"
+        "canvas canvas canvas canvas"
+        "canvas canvas canvas canvas";
+        margin-bottom: 0vh;
+    }
+    #map{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}

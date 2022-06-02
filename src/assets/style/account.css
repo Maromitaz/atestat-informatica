@@ -1,0 +1,156 @@
+.account-management{
+	opacity: 1;
+    position: absolute;
+    width: 50rem;
+    height: 26rem;
+    margin-top: 0rem;
+    left:25%;
+    top: 8rem;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.4s;
+    transition: opacity 1s ease-in-out;
+    transition: top 0.5s ease-in-out;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+        top: 2rem;
+	}
+	100% {
+		opacity: 1;
+        top: 8rem;
+	}
+}
+
+.account-management .content{
+    position: relative;
+    margin-left: 8.7rem;
+    border: 10px solid #2B2E32;
+    border-radius: 1rem;
+    border-width: 75%;
+    height: 100%;
+    background-color: rgb(112, 112, 112);
+    box-shadow: 0 12px 32px;
+}
+
+.account-management .content h3 {
+    height: 2px;
+}
+.account-management .content .text {
+    margin-top: 10px !important;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.account-management .content div input {
+    margin: auto;
+    width: 30rem;
+    margin-top: 2rem;
+}
+.account-management .content button{
+    margin-top: 1rem;
+    margin-left: calc(30.1rem/2);
+    width: 25%;
+}
+.account-management .content h2{
+    margin-top: -1rem;
+    background-color: #2B2E32;
+    height:1px;
+}
+.account-management .content a{
+    margin-left: 40%;
+    padding-bottom: 11px;
+    padding-top: 11px;
+    position: relative;
+    margin-top: 2rem;
+    top: -10%;
+    text-decoration: none;
+    color: #2B2E32;
+    border-left:1px solid rgba(255, 0, 0, 0);
+    transition: color 0.2s ease-in-out, border-left 0.2s ease-in-out;
+}
+
+.forgot-password{
+    overflow: hidden;
+    color: #e25454;
+    margin-top:1rem;
+    margin-bottom:0.35rem;
+    margin-left: 40%;
+    border: 0px solid #2B2E32;
+    border-radius: 1rem;
+    border-width: 75%;
+    width: 0;
+    background-color: #e25454;
+    transition: width 0.3s ease-in-out;
+}
+.active{
+    width: 7.2rem;
+}
+.button-primary-override{
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+.button-primary-override:hover, 
+.button-primary-override:active,
+.button-primary-override:focus,
+.button-primary-override:visited{
+    color: #212529;
+    background-color: #e25454 !important;
+    border-color: #2B2E32 !important;
+}
+.modal-content{
+    background-color: #626262;
+}
+.modal-title{
+    color:#fff;
+}
+.btn-close{
+    color:#fff;
+}
+.modal-body .form-control{
+    margin-top:1rem;
+}
+.btn .btn-danger{
+    background-color:#e25454;
+}
+.btn-close-custom{
+    padding: 0;
+    border: none;
+    background: none;
+}
+.fa-times{
+    color:#fff;
+}
+@media (max-width: 925px){
+    .forgot-password{
+        margin-left: 40%;
+    }
+    .active{
+        width: 7.2rem;
+    }
+    .account-management{
+        width: 0rem;
+        top: 8rem;
+        left:0;
+        width: 100%;
+    }
+    .account-management .content{
+        margin-left:0;
+    }
+    .account-management .content div input {
+        margin: auto;
+        width: 16rem;
+        margin-top: 2rem;
+    }
+    .account-management .content a{
+        margin-left: 40%;
+    }
+    .account-management .content button{
+        margin-left: 40%;
+    }
+    .account-management-active{
+        transition: top 0.5s ease-in-out;
+        top: 8rem;
+    }
+}

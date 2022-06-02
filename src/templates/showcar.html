@@ -1,0 +1,44 @@
+{% extends 'template.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'style/showcar.css' %}" type="text/css" />
+{% endblock %}
+{% block content %}
+<div class="content">
+	<div class="container-xxl">
+		<div class="content-felx">
+			<div class="contents">
+				<h1 class="content-title"><a
+						href="https://www.porsche.com/central-eastern-europe/en/_romania_/models/911/911-turbo-models/911-turbo-s/">Porsche
+						911 Turbo S</a></h1>
+				<canvas id="bg" class="canvas"></canvas>
+				<ul class="content-description">
+					<li></li>
+					<li>Dimensiune cilindri: 102,0mm</li>
+					<li>Cursa: 76,4mm</li>
+					<li>Capacitate cilindrica: 3.745 cm³</li>
+					<li>Putere (kW): 478 kW </li>
+					<li>Putere (PS): 650 PS</li>
+					<li>RPM punct putere maxima: 6.750 r/min </li>
+					<li>Turatia maxima a motorului: 7.200 r/min </li>
+					<li>Cuplu maxim: 800 Nm </li>
+					<li>RPM interval de turatii pentru cuplu maxim: 2.500 - 4.000 r/min</li>
+					<li>Inaltime: 1.303 mm</li>
+					<li>Latime: 1.900 mm</li>
+					<li>Ampatament: 2.450 mm</li>
+					<li>Lungime: 4.535 mm</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
+{% block javascript %}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+	crossorigin="anonymous"></script>
+<script>
+	const model = "{% static './three/masina/scene.gltf' %}";
+</script>
+<script type="module" src="{% static 'js/showcar.js' %}"></script>
+{% endblock %}

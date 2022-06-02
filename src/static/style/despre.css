@@ -1,0 +1,138 @@
+html,
+body{
+	overflow:auto;
+}
+
+.grid-container{
+	margin-top: 6rem;
+	margin-left: 7rem;
+	margin-right: 7rem;
+}
+.btn-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding-left: 20%;
+}
+.btn-danger{
+	font-size: 22px !important;
+	margin-left: 25px;
+	margin-top: 25px;
+	margin-right: 12%;
+	background-color: #2B2E32 !important;
+	border-color: #2B2E32 !important;
+	width: 23vw !important;
+	height: 5vh;
+}
+.btn-danger:first-child{
+	width: 50vw !important;
+}
+.btn-danger:focus, .btn-danger:hover{
+	background-color: #E25454 !important;
+	border-color: #E25454 !important;
+}
+.container-universal{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding-left: 25%;
+	padding-right: 25%;
+	font-size:24px;
+}
+.container-universal>h1, 
+.container-universal>h2, 
+.container-universal>h3, 
+.container-universal>h4, 
+.container-universal>h5, 
+.container-universal>h6{
+	margin-left: 14vw;
+	width:100vw;
+}
+.container-universal>h2>a{
+	color: #414346 !important;
+	text-decoration: none !important;
+	transition: color 0.15s ease-in-out;
+}
+.lista-neordonata>h2>a:hover{
+	color: #E25454 !important;
+}
+.container-universal>h1:first-child{
+	margin-left: 4vw;
+	width:100vw;
+}
+.lista-neordonata>li>a{
+	color: #414346 !important;
+	text-decoration: none !important;
+	transition: color 0.15s ease-in-out;
+}
+.lista-neordonata>li>a:hover{
+	color: #E25454 !important;
+}
+.vue-img{
+	width: 40vw;
+}
+.js-img{
+	margin-left: 15vw;
+	width: 10vw;
+}
+.hyperlink{
+    text-decoration: none;
+    color: #e25454;
+    transition: color 0.12s ease-in-out;
+}
+.hyperlink:hover{
+    color: #9e3e3e;
+}
+.html-img{
+	margin-left: 25vh;
+}
+.bootstrap-img{
+	margin-left: 0;
+}
+.css-img{
+	margin-left: 0;
+}
+@media (max-width: 925px){
+	.grid-container{
+		margin-left: 10%;
+		margin-right: 0rem !important;
+	}
+	.btn-container{
+		margin-left: 100vw;
+	}
+	.btn-danger:first-child, .btn-danger{
+		font-size: 16px;
+		margin-right: 0 !important;
+		width: 96vw !important;
+		flex-direction: column;
+		height: auto;
+	}
+	.container-universal{
+		padding-left: 0%;
+		width: 100vw;;
+		align-items: center;
+		justify-content: center;
+	}
+	.container-universal > h1{
+		width: 100vw;
+	}
+	.html-img{
+		margin-left: 0vh;
+	}
+	.vue-img{
+		width: 80vw;
+		margin-left: -5vw;
+	}
+	img{
+		margin-left: 0;
+		width: 60vw;
+		margin-left: -20vw;
+	}
+	.css-img{
+		margin-left: 0;
+	}
+	.js-img{
+		margin-left: 0vw;
+		width: 50vw;
+	}
+}

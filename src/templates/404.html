@@ -1,0 +1,15 @@
+{% extends 'template.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'style/despre.css' %}" type="text/css" />
+{% endblock %}
+{% block content %}
+<div class="grid-container">
+	<div class="container-universal">
+        <h1>Pagina de ați accesat-o nu poate fi găsită</h1>
+        <h2>Puteți reveni pe pagina <a class="inapoi" href="{% url 'acasa' %}">principală</a></h2>
+	</div>
+</div>
+{% endblock %}
+{% block javascript %}
+{% endblock %}

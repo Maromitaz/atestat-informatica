@@ -1,0 +1,15 @@
+canvas{
+    margin-left: 0vw;
+    width: 40vw !important;
+    height: 35vh !important;
+}
+@media (max-width: 925px){
+    .container-universal{
+        margin-left: 0;
+    }
+    canvas{
+        margin-left: 0vw;
+        width: 60vw !important;
+        height: 35vh !important;
+    }
+}

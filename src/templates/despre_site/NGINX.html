@@ -1,0 +1,24 @@
+{% extends 'template.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'style/despre.css' %}" type="text/css" />
+{% endblock %}
+{% block content %}
+<div class="grid-container">
+	<div class="container-universal">
+		<ul>
+			<img class="nginx-img" src="{% static 'images/NGINX.png' %}">
+			<li>Este un webserver folosit pentru balasarea fișierelor statice (CSS, JavaScript, imagini)</li>
+			<li>Software-ul a fost făcut pentru prima dată de către Igor Sysoev și este întreținută de Nginx, Inc. ;
+			</li>
+			<li>Acesta poate rula pe diferite sisteme de operare cum ar fi: Linux, macOS, Windows, BSD, IBM AIX etc. ;
+			</li>
+			<li>Codul sursă este lăsat publicului prin licența 2-clause BSD, care permite folosirea codului sursă de
+				toată lumea, dar trebuie acreditată munca celor de la Nginx, Inc.
+			</li>
+		</ul>
+	</div>
+</div>
+{% endblock %}
+{% block javascript %}
+{% endblock %}

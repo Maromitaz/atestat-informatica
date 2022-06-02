@@ -1,0 +1,47 @@
+:root{
+	--culoareMargin: #2B2E32;
+}
+html,
+body{
+	overflow:auto;
+}
+.main{
+	margin-top: 6rem;
+	margin-left: 7rem;
+	margin-right: 7rem;
+}
+.content{
+	display:flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 60vh;
+	margin-left: 50vh;
+}
+.container{
+	overflow:hidden;
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1.5fr;
+	gap: .5em 0em;
+	grid-template-areas: 
+	  "nume-prenume email"
+	  "mesaj mesaj"; 
+	justify-content: stretch; 
+	align-content: stretch; 
+	justify-items: stretch; 
+	align-items: stretch; 
+	border: .5rem solid var(--culoareMargin);
+	border-radius: .5rem;
+	margin-right: .5rem;
+	grid-auto-flow: column;
+}
+.nume-prenume { grid-area: nume-prenume; border-right: 1px solid var(--culoareMargin); border-bottom: 1px solid var(--culoareMargin); text-align: center;}
+.email { grid-area: email; border-bottom: 1px solid var(--culoareMargin); text-align: center;}
+.mesaj{ grid-area: mesaj; }
+@media(max-width: 925px){
+	.content{
+		/* margin-left: -3vh; */
+		margin-left: -.5rem;
+		width: 65vw;
+	}
+}

@@ -1,0 +1,21 @@
+{% extends 'template.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static '/style/home.css' %}" type="text/css" />
+{% endblock %}
+
+{% block content %}
+<div class="container">
+	<h1 class="titlu"><x>Proiect pentru obtinerea atestarii profesionale in informatica</x> <br>
+	Nume: Boltasu <br>
+	Prenume: Alexandru-Daniel <br>
+	Tema: Porsche <br>
+	<strong>Institutia de invatamant:<br>Colegiul Tehnologic "Grigore Cerchez"</strong><br>
+	Clasa a XII-a A <br>
+	Profesor coordonator: Balica Angelica Maria</h1>
+</div>
+{% endblock %}
+
+{% block javascript %}
+<script src="{% static '/js/home.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'template.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'style/despre.css' %}" type="text/css" />
+<link rel="stylesheet" href="{% static 'three/index.caf8b167.css' %}" type="text/css" />
+{% endblock %}
+{% block content %}
+<div class="grid-container">
+	<div class="container-universal">
+		<ul>
+			<canvas id="bg"></canvas><br>
+			<li>Three.js este o librarie scrisă în JavaScript;</li>
+			<li>A aparut pe data de 24 Aprilie 2010, autorul fiind Ricardo Cabello, cunoscut sub numele de "Mr.
+				doob" și este întretinut de Three.js Authors;</li>
+			<li>Are ca întrebuințare afișarea modelelor 3d intr-un browser web;</li>
+			<li>Sursa codului este disponibila pentru toata lumea în depozitul lor de pe <a class="hyperlink"
+					href="https://github.com/mrdoob/three.js/">GitHub</a>.</li>
+		</ul>
+
+		</canvas>
+	</div>
+</div>
+{% endblock %}
+{% block javascript %}
+<script>
+	const model = "{% static './three/copac/scene.gltf' %}";
+</script>
+<script type="module" src="{% static 'three/index.0faefc34.js' %}"></script>
+{% endblock %}
