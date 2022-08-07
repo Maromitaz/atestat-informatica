@@ -9,5 +9,5 @@ openpyxl==3.0.9
 regex==2022.3.2
 sqlparse==0.4.2
 tzdata==2021.5
-waitress==2.1.1
+waitress>=2.1.2
 psycopg2==2.9.3
