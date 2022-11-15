@@ -11,3 +11,4 @@ sqlparse==0.4.2
 tzdata==2021.5
 waitress>=2.1.2
 psycopg2==2.9.3
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
